@@ -1,113 +1,205 @@
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, sans-serif;
-  background:#f9f9f9;
-  color:#333;
+  background: #f9f9f9;
+  color: #333;
 }
 
-header {
-  background:#fff;
-  border-bottom:1px solid #ccc;
-  padding:10px;
+.header {
+  background-color: #ef5801; /* naranja Menéame */
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  clear: both;
 }
 
-.logo {
-  float:left;
-  width:40px;
-  height:40px;
-  background:orange;
-  color:#fff;
-  font-weight:bold;
-  text-align:center;
-  line-height:40px;
-  margin-right:10px;
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.header .left {
+  float: left;
+}
+
+/* Imagen del logo */
+.logo-img {
+  float: left;
+  height: 50px; /* igual que la altura del header */
+  width: auto;
+  margin-right: 10px;
+  border-radius: 4px; /* opcional, mantiene estética del logo previo */
+}
+
+.header .edition {
+  float: left;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.header .right {
+  float: right;
+}
+
+.header .right span,
+.header .right a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header .right a:hover {
+  text-decoration: underline;
+}
+
+.header .right .menu {
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 header h1 {
-  float:left;
-  font-size:18px;
-  margin:10px 0;
+  float: left;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .search-box {
-  float:right;
+  float: right;
 }
 
 .search-box input {
-  padding:5px;
+  padding: 5px;
 }
 
 .search-box button {
-  padding:5px 10px;
-  background:orange;
-  color:#fff;
-  border:none;
+  padding: 5px 10px;
+  background: orange;
+  color: #fff;
+  border: none;
 }
 
 .hero {
-  background:#fff;
-  margin:10px;
-  padding:10px;
+  background: #fff;
+  margin: 10px;
+  padding: 10px;
 }
 
 .content {
-  margin:10px;
+  margin: 10px;
 }
 
 .main {
-  float:left;
-  width:60%;
+  float: left;
+  width: 60%;
   height: 600px;
-overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 aside {
-  float:right;
-  width:28%;
+  float: right;
+  width: 28%;
 }
 
 .card {
-  background:#fff;
-  margin-bottom:10px;
-  padding:10px;
-  border:1px solid #ddd;
-}
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+    border: 2px solid #000000;
+      border-radius: 20px;
 
-.destacado {
-background: #ebdd17;
-background: linear-gradient(90deg,rgb(220, 162, 14) 0%, orange 50%, rgba(252, 176, 69, 1) 100%);
-  margin-bottom:10px;
-  padding:10px;
-  border:3px solid #000000;
-  border-radius: 20px;
-  width: 240px;
-  float: right;
-  height: 300px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-   font-family: "Sofadi One", system-ui;
-  font-style: normal;
-  color: white;
-  font-size: 20px;
 
 }
+
+
 
 .votes {
-  float:right;
-  color:orange;
-  font-weight:bold;
+  float: right;
+  color: orange;
+  font-weight: bold;
 }
 
-footer {
-  clear:both;
-  background:orange;
-  border-top:1px solid #ccc;
-  text-align:center;
-  padding:20px;
-  margin-top:10px;
-   font-family: "Sofadi One", system-ui;
-  font-weight: 400;
-  font-style: normal;
-    font-size: 30px;
-      color: white;
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ddd;
+  clear: both;
+}
 
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0 0 5px 0;
+}
+
+.footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar estilo Menéame */
+.sidebar {
+  right: 0;
+  top: 60px; /* debajo del header */
+  width: 320px;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 15px;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f15a24;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+  color: #f15a24;
 }

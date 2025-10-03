@@ -10,14 +10,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofadi+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">M</div>
-    <h1>Menéame réplica</h1>
-    <div class="search-box">
-      <input type="text" placeholder="Buscar...">
-      <button>Publicar</button>
+ <header class="header">
+  <div class="container">
+   <div class="left">
+  <img src="logo.png" alt="Logo del sitio" class="logo-img">
+  <span class="edition">Edición General</span>
+</div>
+    <div class="right">
+      <span class="icon-search">🔍</span>
+      <a href="#" class="login">login</a>
+      <a href="#" class="register">registrarse</a>
+      <span class="menu">☰</span>
     </div>
-  </header>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <h3>Navegación</h3>
+  <ul>
+    <li><a href="">Actualidad</a></li>
+    <li><a href="#">Ciencia</a></li>
+    <li><a href="#">Cultura</a></li>
+    <li><a href="#">Ocio</a></li>
+    <li><a href="#">Política</a></li>
+    <li><a href="#">Tecnología</a></li>
+    <li><a href="#">Más visitadas</a></li>
+    <li><a href="#">Populares</a></li>
+  </ul>
+</aside>
 
   <div class="hero">
     <h2>Bienvenido a la réplica</h2>
@@ -87,17 +107,19 @@
       </div>
     </div>
 
-    <aside>
-      <div class="destacado">
-        <h3>Destacado</h3>
-        <p>Noticias más leídas de la semana.</p>
-        <a href="#">Leer más →</a>
-      </div>
-    </aside>
+
   </div>
 
-  <footer>
-    Réplica simplificada con floats
-  </footer>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-left">
+      <p>© 2025 Menéame</p>
+      <p><a href="/terms">Términos</a> | <a href="/privacy">Privacidad</a> | <a href="/cookies">Cookies</a></p>
+    </div>
+    <div class="footer-right">
+      <p><a href="/contact">Contacto</a> | <a href="/about">Acerca de</a></p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
